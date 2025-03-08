@@ -86,7 +86,7 @@ public abstract class AssignmentEndpoint implements Initializeable {
   }
 
   protected AttackResult.AttackResultBuilder informationMessage() {
-    return AttackResult.builder(messages).lessonCompleted(false)..assignmentName(this.getClass().getSimpleName();
+    return AttackResult.builder(messages).lessonCompleted(false).assignmentName(this.getClass().getSimpleName()).build();
   }
 
   @Override
